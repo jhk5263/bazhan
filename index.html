@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AC一键在线扒站 - Austin Chen 个人博客</title>
+  <meta name='keywords' content='在线扒站,一键扒站,一键采集,仿站工具'>
+  <meta name='description' content='AC一键在线扒站是一款专业精简的在线仿站扒站工具，免下载、免安装，直接在浏览器打开网页版就可随时随地用它采集资源站点的材料、样式等。'>
+  <link href="https://lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/simple/css/plugins.css">
+  <link rel="stylesheet" href="./assets/simple/css/main.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <script src="https://lib.baomitu.com/modernizr/2.8.3/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//lib.baomitu.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//lib.baomitu.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body><img src="https://cn.bing.com/th?id=OHR.BubbleNebula_ZH-CN2787112807_768x1366.jpg&amp;rf=LaDigue_768x1366.jpg&amp;pid=hp" alt="Full Background" class="full-bg full-bg-bottom animation-pulseSlow" ondragstart="return false;" oncontextmenu="return false;">
+<div class="col-xs-12 col-sm-10 col-md-8 col-lg-4 center-block " style="float: none;">
+  <br /><br /><br />
+    <div class="widget">
+    <div class="widget-content themed-background-flat text-center"  style="background-image: url(./assets/simple/img/userbg.jpg);background-size: 100% 100%;" >
+<img  class="img-circle"src="https://q4.qlogo.cn/headimg_dl?dst_uin=3340236538&amp;spec=100" alt="Avatar" alt="avatar" height="60" width="60" />
+<p></p>
+    </div>
+
+    <div class="block">
+        <div class="block-title">
+            <div class="block-options pull-right">
+            <a href="http://cyds.123yes.me/bz/" class="btn btn-effect-ripple btn-default toggle-bordered enable-tooltip">首页</a>
+            </div>
+            <h2 id="title"><i class="fa fa-linux"></i>&nbsp;&nbsp;<b>在线扒站</b></h2>
+        </div>
+        <!-- 第一面板 -->
+        <div id="main">
+            <div class="input-group"><div class="input-group-addon"><span class="fa fa-globe"></span></div>
+              <input type="text" id="url" name="url" value="" class="form-control" required="required" placeholder="请输入一个有效的网址"/>
+            </div><br/>
+            <div class="form-group">
+              <input id="submit" type="button" value="提交任务" class="btn btn-primary btn-block"/>
+            </div>
+            <hr>
+            <div id="running_alert">
+            	<div id="running_class" class="alert alert-info alert-dismissable">
+					<!--<button type="button" class="close" onclick="$('#running_alert').hide(500);">&times;</button>-->
+						任务队列未开始！
+				</div>
+            </div>
+            <div id="info_alert">
+            	<div class="alert alert-info alert-dismissable">
+					<button type="button" class="close" onclick="$('#info_alert').hide(500);">&times;</button>
+					本站是利用wget来扒站的，所以点击提交后稍等一会即可！<br>
+					醉笙在线扒站！全新扒站网！请勿用来扒取本网站！一经发现立马删除后台！
+				</div>
+            </div>
+            </div>
+            <!-- 第二面板 -->
+            <div id="main2">
+            	<div id="info_alert2">
+            	<div id="info_mess" class="alert alert-info alert-dismissable">
+					正在获取资源列表...
+				</div>
+				</div>
+            	<div class="table-responsive">
+    				<table class="table">
+        				<!--<thead>
+            				<tr>
+                				<th>序号</th>
+                				<th>名称</th>
+                				<th>操作</th>
+            				</tr>
+        				</thead>-->
+        				<tbody id="table">
+            				<!--<tr>
+                				<td><a class="btn btn-xs btn-danger btn-rounded" href="javascript:void(0);">1</a></td>
+                				<td>wget.moleft.cn.zip</td>
+                				<td><a class="btn btn-xs btn-warning btn-rounded" href="javascript:void(0);">下载</a></td>
+            				</tr>-->
+        				</tbody>
+				</table>
+			</div>      
+            </div>
+			<hr>
+			<div class="form-group">
+			<a id="info" class="btn btn-info btn-rounded"><i class="fa fa-question-circle"></i>&nbsp;本站说明</a>
+			<a id="list" class="btn btn-danger btn-rounded" style="float:right;"><i id="icon" class="fa fa-folder-open"></i>&nbsp;已扒资源</a>
+		</div>
+    </div>
+  </div>
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://wget.moleft.cn/assets/js/common.js"></script>
+</body>
+</html>
